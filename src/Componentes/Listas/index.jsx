@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import Filtro from "../Filtro"
 import './style.css'
 import { useNavigate } from "react-router-dom";
+import { AppContext } from '../../contexto/contexto';
 
 function Listas() {
    
-    const [data, setData] = useState([]);
-    const [tipoSeleccionado, setTipoSeleccionado] = useState('All');
+    const { data, setData, tipoSeleccionado, setTipoSeleccionado } = useContext(AppContext);
     const [busqueda, setBusqueda] = useState('');
     const navigate = useNavigate();
  
