@@ -1,8 +1,9 @@
 import { useState, useEffect, useContext } from 'react'
 import { useParams } from "react-router-dom"; 
 import { AppContext } from '../../contexto/contexto';
+import './style.css'
 
-function Detalle() {
+function Pokemon() {
 
   const { name } = useParams(); 
   const [datapoke, setDatapoke] = useState([]);
@@ -56,4 +57,4 @@ function Detalle() {
   );
 }
 
-export default Detalle;
+export default Pokemon

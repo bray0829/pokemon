@@ -2,13 +2,13 @@ import { useState } from 'react'
 
 import './style.css'
 
-function Usuarios() {
-  
+function Usuario() {
+
   return (
     <>
-      <h1>Usuarios</h1>
+      <h1>Usuario</h1>
     </>
   )
 }
 
-export default Usuarios
+export default Usuario
